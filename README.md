@@ -101,9 +101,78 @@
   - 大数据批量查询。
 - **官网**: [https://hive.apache.org](https://hive.apache.org)
   
-### Data Warehouse
+## Data Warehouse
 
-### Data Lake
+### Apache Iceberg
+
+**简介**  
+Iceberg 是一个高性能的表格式，用于大规模数据湖管理，支持高效的数据读写和版本控制。
+
+**特点**  
+- 支持表级事务和数据快照。  
+- 高效处理大规模分区和元数据管理。  
+- 与 Spark、Flink、Presto 等大数据工具兼容。  
+
+**使用场景**  
+- 数据湖中大规模表管理和查询优化。  
+- 分析和处理结构化和半结构化数据。  
+
+**官网**  
+[https://iceberg.apache.org](https://iceberg.apache.org)
+
+## Data Lake
+
+### Delta Lake
+
+**简介**  
+Delta Lake 是一个基于 Apache Spark 的开源存储层，提供 ACID 事务支持，确保数据湖中的数据质量和一致性。
+
+**特点**  
+- 支持 ACID 事务，保障数据完整性。  
+- 高性能增量数据处理。  
+- 支持数据版本管理和时间旅行（Time Travel）。  
+
+**使用场景**  
+- 数据湖中的数据治理与质量保障。  
+- 增量数据加载与分析。  
+
+**官网**  
+[https://delta.io](https://delta.io)
+
+### Apache Hudi
+
+**简介**  
+Hudi 是一个流式数据湖平台，用于管理存储在 HDFS 或云上的大规模数据，支持实时数据插入和查询。
+
+**特点**  
+- 支持实时更新和查询。  
+- 提供增量数据处理能力。  
+- 集成流处理框架，如 Kafka 和 Flink。  
+
+**使用场景**  
+- 实时数据湖分析与更新。  
+- 构建数据流管道，实现数据变化捕获（CDC）。  
+
+**官网**  
+[https://hudi.apache.org](https://hudi.apache.org)
+
+### Alluxio
+
+**简介**  
+Alluxio 是一个分布式存储系统，作为跨平台的虚拟数据湖层，用于统一访问多种存储后端。
+
+**特点**  
+- 提供跨云和本地存储的统一访问。  
+- 支持多种存储后端（HDFS、S3、GCS）。  
+- 提高存储访问性能，通过数据缓存加速计算。  
+
+**使用场景**  
+- 构建多云或混合云数据湖。  
+- 数据湖存储访问优化和加速。  
+
+**官网**  
+[https://www.alluxio.io](https://www.alluxio.io)
+
 ### Data Cloud
 ## Data Integration 
 ## Data Clean
